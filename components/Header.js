@@ -1,5 +1,6 @@
 import styles from './Header.module.scss'
 import { useState } from 'react'
+import Link from 'next/link'
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false)
@@ -24,13 +25,15 @@ const Header = () => {
         </span>
       </button>
       <div className={`${styles.buttons} ${isActive ? styles['is-active'] : ''}`}>
-        <a href="/">Home</a>
-        <a href="/contato">Contato</a>
-        <a href="/estrutura">Estrutura</a>
-        <img className={styles.logo} src="./logo.png"></img>
-        <a href="/historia">História</a>
-        <a href="/pub">Pub691</a>
-        <a href="/galeria">Galeria</a>
+        <Link href="/">HOME</Link>
+        <Link href="/historia">HISTÓRIA</Link>
+        <Link href="/estrutura">ESTRUTURA</Link>
+        <Link href="/" className="logo-link">
+          <img className={styles.logo} src="./logo_black.png"></img>
+        </Link>
+        <Link href="/pub">PUB691</Link>
+        <Link href="/galeria">GALERIA</Link>
+        <Link href="/contato">CONTATO</Link>
       </div>
     </div>
   )

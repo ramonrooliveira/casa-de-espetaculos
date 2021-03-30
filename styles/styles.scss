@@ -38,8 +38,9 @@ hr {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
+    // -webkit-text-stroke-width: 3px;
+    // -webkit-text-stroke-color: black;
+    text-shadow: 0 4px 6px rgb(0 0 0 / 50%);
     font-size: clamp(6rem, 8vw , 12rem);
   }
 }
@@ -89,6 +90,7 @@ hr {
   color: $primary-color;
   font-size: 7rem;
   text-align: center;
+  text-shadow: 0 4px 6px rgb(0 0 0 / 50%);
 }
 
 .main-image-links {

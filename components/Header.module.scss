@@ -5,8 +5,8 @@ $hamburger-layer-color: white;
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 12px 240px 12px;
-  background-color: black;
+  padding: 12px 180px 12px;
+  background-color: white;
   color: white;
   font-family: 'MedievalSharp';
   font-size: 1.5rem;
@@ -16,13 +16,15 @@ $hamburger-layer-color: white;
     justify-content: space-between;
     align-items: center;
   
-    a {
-      color: white;
+    a:not(.logo-link) {
+      color: black;
       text-decoration: none;
+      font-size: 2rem;
     }
   
     .logo {
-      width: 12rem;
+      padding-top: 1rem;;
+      width: 15rem;
     }
   }
 }
