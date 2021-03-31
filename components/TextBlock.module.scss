@@ -1,0 +1,40 @@
+$primary-color: #973436;
+
+.text-block-wrapper {
+  display: inline-block;
+}
+
+.text-block {
+  max-width: 60%;
+  font-family: Merienda;
+  font-size: 2rem;
+  padding: 48px;
+
+  h3.title {
+    font-family: MedievalSharp;
+    text-align: center;
+  }
+  
+  &.overlap-previous {
+    transform: translate(0, -10vh);
+  }
+  &.overlap-next {
+    transform: translate(0, 25%);
+  }
+  
+  &.right {
+    float: right;
+  }
+  &.left {
+    float: left;
+  }
+  
+  &.black {
+    background-color: black;
+    color: white;
+  }
+  &.primary {
+    background-color: $primary-color;
+    color: white;
+  }
+}

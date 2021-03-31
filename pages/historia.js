@@ -1,7 +1,9 @@
+import CoverImage from '../components/CoverImage'
+
 export default function Historia () {
   return (
     <div>
-      Historia
+      <CoverImage title="HISTÓRIA" image="frente-zoom.jpg" />
     </div>
   )
 }

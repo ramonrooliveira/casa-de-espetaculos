@@ -7,6 +7,11 @@ const Header = () => {
 
   const handleClick = () => {
     setIsActive(!isActive)
+    if (isActive) {
+      document.body.style.overflow = 'unset';
+    } else {
+      document.body.style.overflow = 'hidden';
+    }
   }
 
   return (

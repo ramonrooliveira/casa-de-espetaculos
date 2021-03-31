@@ -1,0 +1,30 @@
+.cover-image {
+  max-height: 100vh;
+  overflow: hidden;
+  img {
+    // display: block;
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+
+    /* Center and scale the image nicely */
+    // background-position: top;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    transform: translate(0, -320px);
+  }
+
+  .full-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    // -webkit-text-stroke-width: 3px;
+    // -webkit-text-stroke-color: black;
+    text-shadow: 0 8px 12px rgb(0 0 0 / 75%);
+    font-size: clamp(5rem, 10vw , 15rem);
+    min-width: 80%;
+  }
+}

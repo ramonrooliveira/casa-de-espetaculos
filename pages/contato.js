@@ -1,9 +1,11 @@
-import CoverImage from '../components/CoverImage'
+import ContactForm from '../components/ContactForm'
+import Map from '../components/Map'
 
 export default function Contato () {
   return (
-    <div>
-      <CoverImage title="Contato" image="frente" />
+    <div className="contact-container">
+      <ContactForm />
+      <Map height="100%" width="80%" />
     </div>
   )
 }

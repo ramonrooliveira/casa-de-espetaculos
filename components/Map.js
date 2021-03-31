@@ -5,7 +5,7 @@ const Map = ({ height, width }) => {
         width={ width } 
         height={ height }
         style={{border: "0"}}
-        allowfullscreen="" 
+        allowFullScreen="" 
         loading="lazy">
 
       </iframe>
