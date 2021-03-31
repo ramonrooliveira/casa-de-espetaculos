@@ -3,7 +3,7 @@ import CoverImage from '../components/CoverImage'
 export default function Galeria () {
   return (
     <div>
-      <CoverImage title="GALERIA" image="palco-cadeiras.jpg" />
+      <CoverImage title="GALERIA" image="palco-cadeiras.jpeg" />
     </div>
   )
 }
