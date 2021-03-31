@@ -26,7 +26,7 @@ hr {
 .text-block {
   max-width: 60%;
   font-family: Merienda;
-  font-size: 2rem;
+  font-size: clamp(1rem, 3vw, 2rem);
   padding: 48px;
 
   h3.title {
@@ -35,7 +35,7 @@ hr {
   }
   
   &.overlap-previous {
-    transform: translate(0, -10vh);
+    transform: translate(0, -5vh);
   }
   &.overlap-next {
     transform: translate(0, 25%);
@@ -89,7 +89,7 @@ hr {
       right: 95%;
       color: white;
       font-family: MedievalSharp;
-      font-size: 5rem;
+      font-size: clamp(3rem, 4vw, 5rem);
       text-shadow: 0 8px 12px rgb(0 0 0 / 75%);
 
       a {
@@ -121,13 +121,33 @@ hr {
         right: 95%;
         color: white;
         font-family: MedievalSharp;
-        font-size: 5rem;
+        font-size: clamp(3rem, 4vw, 5rem);
         text-shadow: 0 8px 12px rgb(0 0 0 / 75%);
 
         a {
           text-decoration: none;
           color: white;
         }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+  .main-image-links {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: unset;
+    padding: 1rem 1rem;
+    
+    .single {
+      span.link-title{
+        top: 40%;
+      }
+    }
+    .double {
+      div > span.link-title{
+        top: 40%;
       }
     }
   }
