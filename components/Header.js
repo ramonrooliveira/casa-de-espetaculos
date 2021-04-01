@@ -5,9 +5,10 @@ import Link from 'next/link'
 const Header = () => {
   const [isActive, setIsActive] = useState(false)
 
-  const handleClick = () => {
+  const handleClick = (lockScroll) => {
     setIsActive(!isActive)
-    if (isActive) {
+    
+    if (isActive || !lockScroll) {
       document.body.style.overflow = 'unset';
     } else {
       document.body.style.overflow = 'hidden';
@@ -23,13 +24,13 @@ const Header = () => {
           ${isActive ? styles['is-active'] : ''}
         `}
         type="button"
-        onClick={handleClick}
+        onClick={() => handleClick(true)}
       >
         <span className={styles['hamburger-box']}>
           <span className={styles['hamburger-inner']}></span>
         </span>
       </button>
-      <div onClick={handleClick} className={`${styles.buttons} ${isActive ? styles['is-active'] : ''}`}>
+      <div onClick={() => handleClick(false)} className={`${styles.buttons} ${isActive ? styles['is-active'] : ''}`}>
         <Link href="/">HOME</Link>
         <Link href="/historia">HISTÓRIA</Link>
         <Link href="/estrutura">ESTRUTURA</Link>
