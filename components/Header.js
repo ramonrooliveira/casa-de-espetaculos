@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   return (
-    <div className={styles.header}>
+    <div className={`${styles.header} ${isActive ? styles['is-active'] : ''}`}>
       <button
         className={`
           ${styles.hamburger}
@@ -29,7 +29,7 @@ const Header = () => {
           <span className={styles['hamburger-inner']}></span>
         </span>
       </button>
-      <div className={`${styles.buttons} ${isActive ? styles['is-active'] : ''}`}>
+      <div onClick={handleClick} className={`${styles.buttons} ${isActive ? styles['is-active'] : ''}`}>
         <Link href="/">HOME</Link>
         <Link href="/historia">HISTÓRIA</Link>
         <Link href="/estrutura">ESTRUTURA</Link>

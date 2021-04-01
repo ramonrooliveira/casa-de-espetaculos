@@ -9,20 +9,21 @@ $hamburger-layer-color: black;
   background-color: white;
   color: white;
   font-family: 'MedievalSharp';
-  // font-size: clamp(1.5rem, 3vw, 3rem);
   
   .buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+    
     a:not(.logo-link) {
+      order: unset;
       color: black;
       text-decoration: none;
-      font-size: clamp(1.5rem, 2vw, 2rem);
+      font-size: clamp(2rem, 2vw, 2rem);
     }
-  
+
     .logo {
+      order: unset;
       padding-top: 1rem;
       width: 10rem;
       cursor: pointer;
@@ -34,7 +35,7 @@ $hamburger-layer-color: black;
   display: none;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1460px) {
   .header {
     padding: 2rem;
 
@@ -47,14 +48,28 @@ $hamburger-layer-color: black;
   }
   .header {
     padding: 1rem;
-    // font-size: 2rem;
+    width: 70px;
+    position: absolute;
+    &.is-active {
+      width: 40vh;
+    }
+    
     .buttons {
       display: none;
       flex-direction: column;
       height: 85vh;
 
+      
       &.is-active {
         display: flex;
+        width: 40vh;
+        a:not(.logo-link) {
+          order: 2;
+        }
+
+        .logo-link {
+          order: 1;
+        }
       }
     }
   }
