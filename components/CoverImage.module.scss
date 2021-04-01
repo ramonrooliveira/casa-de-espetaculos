@@ -1,17 +1,18 @@
 .cover-image {
-  max-height: 100vh;
+  height: 95vh;
   overflow: hidden;
   img {
     // display: block;
     max-width: 100%;
     min-width: 100%;
     object-fit: cover;
+    min-height: 100%;
 
     /* Center and scale the image nicely */
     // background-position: top;
     // background-repeat: no-repeat;
     // background-size: cover;
-    transform: translate(0, -320px);
+    // transform: translate(0, -320px);
   }
 
   .full-title {
@@ -24,7 +25,18 @@
     // -webkit-text-stroke-width: 3px;
     // -webkit-text-stroke-color: black;
     text-shadow: 0 8px 12px rgb(0 0 0 / 75%);
-    font-size: clamp(5rem, 10vw , 15rem);
+    font-size: clamp(4rem, 10vw , 15rem);
     min-width: 80%;
   }
+
+  // @media only screen and (max-width: 600px) {
+  //   .full-title {
+  //     top: 35vw;
+  //   }
+  // }
+  // @media only screen and (min-width: 601px) and (max-width: 1100px) {
+  //   .full-title {
+  //     top: 40vw;
+  //   }
+  // }
 }
