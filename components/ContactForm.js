@@ -1,10 +1,24 @@
 import styles from './ContactForm.module.scss'
 // import TextBlock from '../components/TextBlock'
+import { useState } from 'react'
+import emailjs from 'emailjs-com'
 
 const ContactForm = ({}) => {
   
-  const handleSubmit = () => {
+  const [isSent, setIsSent] = useState(false)
+
+  const handleSubmit = (e) => {
     console.log("submiiiiit")
+    
+    e.preventDefault()
+
+    emailjs.sendForm("service_13n34df","template_8re6gma", e.target, "user_GtSDoCP2kLWvfunbPwpaB")
+      .then((result) => {
+        console.log({result})
+        setIsSent(true)
+      }, (error) => {
+        console.log({error})
+      })
   }
 
 
@@ -12,15 +26,22 @@ const ContactForm = ({}) => {
     <div className={styles.container}>
       <span className={styles.title}>FALE CONOSCO</span>
       <form onSubmit={handleSubmit}>
-        <input placeholder="Nome" type="text" className={styles.formInput}></input>
-        <input placeholder="Email" type="text" className={styles.formInput}></input>
+        <input type="hidden" name="to_name" value="Casa de Espetáculos"></input>
+        <input placeholder="Nome" name="user_name" type="text" className={styles.formInput}></input>
+        <input placeholder="Email" name="from_name" type="text" className={styles.formInput}></input>
         <input placeholder="Motivo" type="text" className={styles.formInput}></input>
-        <input placeholder="Título" type="text" className={styles.formInput}></input>
-        <textarea placeholder="Sua mensagem" className={styles.formInput}></textarea>
+        <textarea placeholder="Sua mensagem" name="message" className={styles.formInput}></textarea>
 
         <button type="submit">ENVIAR</button>
+      {isSent &&
+        <button onClick={() => setIsSent(false)}>Enviar outra mensagem</button>
+      }
       </form>
       {/* <TextBlock text="instagram" classes="black"/> */}
+      <div className={styles.socialLinks}>
+        insta
+        email
+      </div>
     </div>
   )
 }
