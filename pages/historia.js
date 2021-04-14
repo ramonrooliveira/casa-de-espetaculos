@@ -33,12 +33,14 @@ export default function Historia () {
       <img src="/palco4.jpeg" className="full-width-img"/>
       
       <TextBlock
-        text="Posuere tincidunt malesuada nulla nunc sed imperdiet ut nisi commodo. Elit et nec, viverra eu fusce sodales lobortis eu nunc. Urna proin eu consectetur est urna, pulvinar laoreet et pharetra. Arcu quam convallis porttitor nam. Pulvinar pharetra vehicula magna sagittis, tempus orci."
+        text="Posuere tincidunt malesuada nulla nunc sed imperdiet ut nisi commodo. Elit et nec, viverra eu fusce sodales lobortis eu nunc. Urna proin eu consectetur est urna, pulvinar laoreet et pharetra. Arcu quam convallis porttitor nam. Pulvinar pharetra vehicula magna sagittis, tempus orci.
+        Posuere tincidunt malesuada nulla nunc sed imperdiet ut nisi commodo. Elit et nec, viverra eu fusce sodales lobortis eu nunc. Urna proin eu consectetur est urna, pulvinar laoreet et pharetra. Arcu quam convallis porttitor nam. Pulvinar pharetra vehicula magna sagittis, tempus orci."
         classes="right primary overlap-previous"
+        auxImage="logo-masks.png"
       >
         
       </TextBlock>
-      <img src="/logo-masks.png" className="logo-masks" />
+      {/* <img src="/logo-masks.png" className="logo-masks" /> */}
     </div>
   )
 }

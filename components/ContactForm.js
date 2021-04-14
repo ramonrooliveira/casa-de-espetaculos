@@ -33,14 +33,14 @@ const ContactForm = ({}) => {
         <textarea placeholder="Sua mensagem" name="message" className={styles.formInput}></textarea>
 
         <button type="submit">ENVIAR</button>
-      {isSent &&
+      {/* {isSent &&
         <button onClick={() => setIsSent(false)}>Enviar outra mensagem</button>
-      }
+      } */}
       </form>
       {/* <TextBlock text="instagram" classes="black"/> */}
       <div className={styles.socialLinks}>
-        insta
-        email
+        <span>instagram</span>
+        <span>email</span>
       </div>
     </div>
   )
