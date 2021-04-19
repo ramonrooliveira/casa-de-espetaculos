@@ -29,7 +29,12 @@ const ContactForm = ({}) => {
         <input type="hidden" name="to_name" value="Casa de Espetáculos"></input>
         <input placeholder="Nome" name="user_name" type="text" className={styles.formInput}></input>
         <input placeholder="Email" name="from_name" type="text" className={styles.formInput}></input>
-        <input placeholder="Motivo" type="text" className={styles.formInput}></input>
+        <select placeholder="Motivo" type="text" className={styles.formInput}>
+          <option>Contato</option>
+          <option>Agendamentos</option>
+          <option>Pub</option>
+          <option>Diretoria</option>
+        </select>
         <textarea placeholder="Sua mensagem" name="message" className={styles.formInput}></textarea>
 
         <button type="submit">ENVIAR</button>

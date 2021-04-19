@@ -13,7 +13,7 @@ export default function Historia () {
       />
       <hr></hr>
 
-      <BioSection  imageUrl="carla.jpeg" />
+      <BioSection  imageUrl="carla2.jpeg" />
       
         
       {/* <div className="text-block--1">
