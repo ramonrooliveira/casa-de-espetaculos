@@ -3,8 +3,7 @@ import styles from './ContactForm.module.scss'
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
 
-const ContactForm = ({}) => {
-  
+const ContactForm = () => {
   const [isSent, setIsSent] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [selectedContact, setSelectedContact] = useState('contato')
@@ -35,64 +34,63 @@ const ContactForm = ({}) => {
   const handleSubmit = (e) => {
     setIsLoading(true)
     e.preventDefault()
-    
+
     emailjs.sendForm(
       `${contactInfo[`${selectedContact}`].serviceId}`,
-      contactInfo[`${selectedContact}`].templateId, 
-      e.target, 
+      contactInfo[`${selectedContact}`].templateId,
+      e.target,
       contactInfo[`${selectedContact}`].userId
     ).then((result) => {
-        console.log({result})
-        setIsSent(true)
-        setIsLoading(false)
-      }, (error) => {
-        console.log({error})
-        setIsLoading(false)
-      })
+      console.log({ result })
+      setIsSent(true)
+      setIsLoading(false)
+    }, (error) => {
+      console.log({ error })
+      setIsLoading(false)
+    })
   }
 
   const handleContactChange = (e) => {
     setSelectedContact(e.target.value)
   }
 
-
   return (
     <div className={styles.container}>
       <span className={styles.title}>FALE CONOSCO</span>
       <form onSubmit={handleSubmit}>
         {!isSent && <>
-        <input type="hidden" name="to_name" value="Casa de Espetáculos"></input>
-        <input placeholder="Nome" name="user_name" type="text" className={styles.formInput}></input>
-        <input placeholder="Email" name="from_name" type="text" className={styles.formInput}></input>
-        <select 
-          placeholder="Motivo" 
-          type="text" 
-          className={styles.formInput}
-          onChange={handleContactChange}
-        >
-          <option value="contato">Contato</option>
-          <option value="agenda">Agendamentos</option>
-          <option value="pub">Pub</option>
-          <option value="diretoria">Diretoria</option>
-        </select>
-        <textarea placeholder="Sua mensagem" name="message" className={styles.formInput}></textarea>
+          <input type="hidden" name="to_name" value="Casa de Espetáculos"></input>
+          <input placeholder="Nome" name="user_name" type="text" className={styles.formInput}></input>
+          <input placeholder="Email" name="from_name" type="text" className={styles.formInput}></input>
+          <select
+            placeholder="Motivo"
+            type="text"
+            className={styles.formInput}
+            onChange={handleContactChange}
+          >
+            <option value="contato">Contato</option>
+            <option value="agenda">Agendamentos</option>
+            <option value="pub">Pub</option>
+            <option value="diretoria">Diretoria</option>
+          </select>
+          <textarea placeholder="Sua mensagem" name="message" className={styles.formInput}></textarea>
         </>
         }
 
-      {!isLoading && !isSent &&
+        {!isLoading && !isSent &&
         <button type="submit">
           ENVIAR
         </button>
-      }
-      {!isLoading && isSent &&
+        }
+        {!isLoading && isSent &&
         <>
-        <span>Mensagem enviada :)</span>
-        <button onClick={() => setIsSent(false)}>Enviar outra mensagem</button>
+          <span>Mensagem enviada :)</span>
+          <button onClick={() => setIsSent(false)}>Enviar outra mensagem</button>
         </>
-      }
-      {isLoading &&
+        }
+        {isLoading &&
         <span>is loading</span>
-      }
+        }
       </form>
       {/* <TextBlock text="instagram" classes="black"/> */}
       <div className={styles.socialLinks}>

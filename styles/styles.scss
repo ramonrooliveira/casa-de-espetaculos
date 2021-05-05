@@ -211,7 +211,7 @@ hr {
 img.logo-masks {
   // margin: 2rem auto;
   position: relative;
-  padding: 2rem 0;
+  padding: 8rem 0;
   left: 10%;
   width: 10vw;
 }
@@ -223,9 +223,7 @@ img.logo-masks {
 
 /* GALERIA */
 .alice-carousel {
-  &.__ssr {
-    padding: 2rem 0;
-  }
+  padding: 2rem 0;
 }
 
 /* MEDIA QUERIES */
