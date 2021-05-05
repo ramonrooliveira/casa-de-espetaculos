@@ -16,11 +16,16 @@ const BioSection = ({ imageUrl }) => {
         <div className="foto-carla">
           <img src={`/${imageUrl}`}/>
         </div>
-        <div className="bio-info-text">
+        {/* <div className="bio-info-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu adipiscing at nibh ipsum erat amet venenatis cras eget.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu adipiscing at nibh ipsum erat amet venenatis cras eget.
-        </div>
+        </div> */}
       </div>
+        <TextBlock
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu adipiscing at nibh ipsum erat amet venenatis cras eget.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu adipiscing at nibh ipsum erat amet venenatis cras eget."
+        classes="right white overlap-previous"
+      ></TextBlock>
     </div>
   )
 }

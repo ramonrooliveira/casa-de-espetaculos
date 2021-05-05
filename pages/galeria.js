@@ -13,25 +13,36 @@ const items = [
 ];
 
 
-export default function Galeria ({ deviceType }) {
+export default function Galeria () {
   return (
     <div>
       <CoverImage title="GALERIA" image="palco-cadeiras.jpeg" />
-      <AliceCarousel mouseTracking items={items} />
+      <AliceCarousel 
+        autoPlay={true}
+        // autoPlayControls={true}
+        autoPlayInterval={3500}
+        animationDuration={1200}
+        animationType="fadeout"
+        autoPlayStrategy="all"
+        infinite={true}
+        disableButtonsControls={true}
+        mouseTracking 
+        items={items} 
+      />
     </div>
   )
 }
 
-Galeria.getInitialProps = ({ req }) => {
-  let userAgent;
-  if (req) {
-    userAgent = req.headers["user-agent"];
-  } else {
-    userAgent = navigator.userAgent;
-  }
-  const parser = new UAParser();
-  parser.setUA(userAgent);
-  const result = parser.getResult();
-  const deviceType = (result.device && result.device.type) || "desktop";
-  return { deviceType };
-};
+// Galeria.getInitialProps = ({ req }) => {
+//   let userAgent;
+//   if (req) {
+//     userAgent = req.headers["user-agent"];
+//   } else {
+//     userAgent = navigator.userAgent;
+//   }
+//   const parser = new UAParser();
+//   parser.setUA(userAgent);
+//   const result = parser.getResult();
+//   const deviceType = (result.device && result.device.type) || "desktop";
+//   return { deviceType };
+// };

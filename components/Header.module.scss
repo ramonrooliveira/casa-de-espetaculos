@@ -1,4 +1,4 @@
-$hamburger-layer-color: black;
+$hamburger-layer-color: white;
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 .header {
@@ -48,16 +48,31 @@ $hamburger-layer-color: black;
   }
   .header {
     padding: 1rem;
-    width: 70px;
-    position: absolute;
+    // width: 70px;
+    background-color: black;
+    position: fixed;
+    span[class^="Header_hamburger-inner"] {
+      &::before,
+      &::after {
+        background-color: white;
+      }
+    }
     &.is-active {
+      background-color: rgba(255, 255, 255, 1);
       width: 40vh;
+      span[class^="Header_hamburger-inner"] {
+        &::before,
+        &::after {
+          background-color: black;
+          opacity: 1;
+        }
+      }
     }
     
     .buttons {
       display: none;
       flex-direction: column;
-      height: 85vh;
+      height: 70vh;
 
       
       &.is-active {
@@ -71,6 +86,10 @@ $hamburger-layer-color: black;
           order: 1;
         }
       }
+      .logo {
+        padding-top: unset;
+      }
     }
+
   }
 }

@@ -5,7 +5,7 @@ export default function Contato () {
   return (
     <div className="contact-container">
       <ContactForm />
-      <Map height="100%" width="80%" />
+      <Map height="100%" width="100%" />
     </div>
   )
 }
