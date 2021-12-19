@@ -2,9 +2,9 @@ import styles from './CoverImage.module.scss'
 // import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-const CoverImage = ({ title, image }) => {
+const CoverImage = ({ title, image, extra }) => {
   return (
-    <div className={styles.coverImage} >
+    <div className={`${styles.coverImage} ${styles[extra]}`} >
       {/* <img src={`./${image}`} alt=""/> */}
       {/* <motion.div
         initial="pageInitial" 

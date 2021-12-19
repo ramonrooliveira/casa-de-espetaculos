@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Merienda&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Merienda&display=swap");
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
 // @import "./_media-queries.scss";
 
 $primary-color: #973436;
 
 body {
-  font-family: 'MedievalSharp', 'Merienda',
-    'Arial', sans-serif;
+  font-family: "MedievalSharp", "Merienda", "Arial", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -18,8 +17,6 @@ hr {
   width: 50%;
   margin: 4vw auto;
 }
-
-
 
 /* TEXT BLOCK */
 .text-block-wrapper {
@@ -38,12 +35,11 @@ hr {
     font-family: MedievalSharp;
     text-align: center;
   }
-  
+
   &.overlap-previous {
     transform: translate(0, -15vh);
     margin-bottom: -15vh;
     &.small-card {
-      
       display: flex;
       align-items: center;
       transform: translate(3vw, -15vh);
@@ -59,14 +55,14 @@ hr {
       transform: translate(3vw, 15vh);
     }
   }
-  
+
   &.right {
     float: right;
   }
   &.left {
     float: left;
   }
-  
+
   &.black {
     background-color: black;
     color: white;
@@ -81,7 +77,6 @@ hr {
     color: black;
     border: 2px solid black;
   }
-  
 }
 
 /* END TEXT BLOCK */
@@ -159,14 +154,13 @@ hr {
       }
     }
   }
-
 }
 
 /* BIO SECTION */
 .bio-info {
   display: flex;
   background-color: black;
-  box-shadow:0px 0px 0px 3rem white inset;
+  box-shadow: 0px 0px 0px 3rem white inset;
   // margin-bottom: 16vh;
 
   .foto-carla {
@@ -177,11 +171,10 @@ hr {
     margin-left: 5vw;
     // padding-top: 4rem;
     overflow: hidden;
-  
+
     img {
       width: 70vw;
     }
-  
   }
   .bio-info-text {
     border: 2px solid black;
@@ -196,7 +189,6 @@ hr {
     display: flex;
     align-items: center;
   }
-
 }
 
 /* END BIO SECTION */
@@ -206,6 +198,10 @@ hr {
   width: 100%;
   max-height: 80vh;
   object-fit: cover;
+
+  &.full-height {
+    max-height: 100%;
+  }
 }
 
 img.logo-masks {
@@ -233,14 +229,14 @@ img.logo-masks {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: unset;
     padding: 0 1rem;
-    
+
     .single {
-      span.link-title{
+      span.link-title {
         top: 40%;
       }
     }
     .double {
-      div > span.link-title{
+      div > span.link-title {
         top: 40%;
       }
     }
@@ -258,24 +254,23 @@ img.logo-masks {
       transform: unset;
       margin-top: unset;
     }
-    
-    &.right, &.left {
+
+    &.right,
+    &.left {
       float: unset;
     }
-    
   }
 
-  .bio-info {    
+  .bio-info {
     margin-bottom: 10vh;
-    box-shadow:0px 0px 0px 1.5rem white inset;
+    box-shadow: 0px 0px 0px 1.5rem white inset;
 
     .foto-carla {
       margin-left: 3vw;
-    
+
       img {
         width: 100vw;
       }
-    
     }
 
     .bio-info-text {
@@ -283,7 +278,7 @@ img.logo-masks {
       max-width: 75vw;
       transform: translate(-5vw, 5vh);
       // padding: 4rem;
-    }  
+    }
   }
 
   .contact-container {
@@ -298,14 +293,14 @@ img.logo-masks {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: unset;
     padding: 0 1rem;
-    
+
     .single {
-      span.link-title{
+      span.link-title {
         top: 40%;
       }
     }
     .double {
-      div > span.link-title{
+      div > span.link-title {
         top: 40%;
       }
     }
@@ -326,24 +321,23 @@ img.logo-masks {
       transform: unset;
       margin-top: unset;
     }
-    
-    &.right, &.left {
+
+    &.right,
+    &.left {
       float: unset;
     }
-    
   }
 
-  .bio-info {    
+  .bio-info {
     margin-bottom: 10vh;
-    box-shadow:0px 0px 0px 1.5rem white inset;
+    box-shadow: 0px 0px 0px 1.5rem white inset;
 
     .foto-carla {
       margin-left: 3vw;
-    
+
       img {
         width: 30vh;
       }
-    
     }
 
     .bio-info-text {
@@ -351,17 +345,14 @@ img.logo-masks {
       max-width: 75vw;
       transform: translate(-5vw, 5vh);
       // padding: 4rem;
-    }  
+    }
   }
 
   .contact-container {
     grid-template-columns: unset;
     grid-template-rows: 1fr 1fr;
   }
-
 }
-
-
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .main-image-links {
@@ -369,14 +360,14 @@ img.logo-masks {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: unset;
     padding: 0 1rem;
-    
+
     .single {
-      span.link-title{
+      span.link-title {
         top: 40%;
       }
     }
     .double {
-      div > span.link-title{
+      div > span.link-title {
         top: 40%;
       }
     }
@@ -388,7 +379,7 @@ img.logo-masks {
   .text-block {
     max-width: unset;
     padding: 4rem;
-    
+
     &.overlap-previous {
       transform: unset;
       margin-bottom: unset;
@@ -397,12 +388,13 @@ img.logo-masks {
       transform: unset;
       margin-top: unset;
     }
-    &.right, &.left {
+    &.right,
+    &.left {
       float: unset;
     }
   }
 
-  .bio-info {    
+  .bio-info {
     margin-bottom: 10vh;
     .foto-carla {
       // width: 15vw;
@@ -411,20 +403,19 @@ img.logo-masks {
       margin-bottom: 8rem;
       margin-left: 10vw;
       padding-top: 4rem;
-    
+
       img {
         width: 20vh;
       }
-    
     }
 
-    box-shadow:0px 0px 0px 1.5rem white inset;
+    box-shadow: 0px 0px 0px 1.5rem white inset;
     .bio-info-text {
       height: 70vh;
       max-width: 75vw;
       transform: translate(-5vw, 5vh);
       // padding: 4rem;
-    }  
+    }
   }
 
   .contact-container {
@@ -439,14 +430,14 @@ img.logo-masks {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: unset;
     padding: 0 1rem;
-    
+
     .single {
-      span.link-title{
+      span.link-title {
         top: 40%;
       }
     }
     .double {
-      div > span.link-title{
+      div > span.link-title {
         top: 40%;
       }
     }
@@ -473,24 +464,23 @@ img.logo-masks {
     // }
   }
 
-  .bio-info {    
+  .bio-info {
     .bio-info-text {
       height: 35vh;
       max-width: 75vw;
       transform: translate(-5vw, 15vh);
       // padding: 4rem;
-    }  
+    }
   }
-
 }
 
 @media only screen and (min-width: 1101px) and (max-width: 1460px) {
-  .bio-info {    
+  .bio-info {
     .bio-info-text {
       height: 30vh;
       max-width: 70vw;
       transform: translate(-5vw, 22vh);
       // padding: 3rem;
-    }  
+    }
   }
 }

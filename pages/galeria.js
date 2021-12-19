@@ -7,16 +7,23 @@ import AliceCarousel from 'react-alice-carousel';
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-  <img src="/pub-interior.jpeg" className="full-width-img" onDragStart={handleDragStart} />,
-  <img src="/palco5.jpeg" className="full-width-img" onDragStart={handleDragStart} />,
-  <img src="/igreja2.jpeg" className="full-width-img" onDragStart={handleDragStart} />,
+  <img src="/galeria1.jpg" className="full-width-img" onDragStart={handleDragStart} />,
+  <img src="/galeria2.jpg" className="full-width-img" onDragStart={handleDragStart} />,
+  <img src="/galeria3.jpg" className="full-width-img" onDragStart={handleDragStart} />,
+  <img src="/galeria4.jpg" className="full-width-img" onDragStart={handleDragStart} />,
+  <img src="/galeria5.jpg" className="full-width-img" onDragStart={handleDragStart} />,
+  <img src="/galeria6.jpg" className="full-width-img" onDragStart={handleDragStart} />,
+  <img src="/galeria7.jpg" className="full-width-img" onDragStart={handleDragStart} />,
+  <img src="/galeria8.jpg" className="full-width-img" onDragStart={handleDragStart} />,
+  <img src="/galeria9.jpg" className="full-width-img" onDragStart={handleDragStart} />,
+  <img src="/galeria10.jpg" className="full-width-img" onDragStart={handleDragStart} />,
 ];
 
 
 export default function Galeria () {
   return (
     <div>
-      <CoverImage title="GALERIA" image="palco-cadeiras.jpeg" />
+      <CoverImage title="GALERIA" image="mosaico-galeria.jpeg" extra="dont-cut" />
       <AliceCarousel 
         autoPlay={true}
         // autoPlayControls={true}

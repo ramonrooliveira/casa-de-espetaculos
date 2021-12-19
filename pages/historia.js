@@ -8,12 +8,18 @@ export default function Historia () {
     <div>
       <CoverImage title="HISTÓRIA" image="frente-zoom.jpeg" />
       <TextBlock
-        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"
+        text={["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"]}
         classes="right black overlap-previous"
       />
       <hr></hr>
 
-      <BioSection imageUrl="carla2.jpeg" />
+      {/* <BioSection imageUrl="carla2.jpeg" /> */}
+
+      <img src="/carla2.jpeg" className="full-width-img align-top"/>
+      <TextBlock
+        text={["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"]}
+        classes="right black overlap-previous"
+      />
 
       {/* <div className="text-block--1">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. At faucibus donec sed magna in tellus quisque vel. Risus ultrices laoreet ullamcorper aliquam. Morbi nunc quam tristique proin ultrices.
@@ -32,8 +38,8 @@ export default function Historia () {
       <img src="/palco4.jpeg" className="full-width-img"/>
 
       <TextBlock
-        text="Posuere tincidunt malesuada nulla nunc sed imperdiet ut nisi commodo. Elit et nec, viverra eu fusce sodales lobortis eu nunc. Urna proin eu consectetur est urna, pulvinar laoreet et pharetra. Arcu quam convallis porttitor nam. Pulvinar pharetra vehicula magna sagittis, tempus orci.
-        Posuere tincidunt malesuada nulla nunc sed imperdiet ut nisi commodo. Elit et nec, viverra eu fusce sodales lobortis eu nunc. Urna proin eu consectetur est urna, pulvinar laoreet et pharetra. Arcu quam convallis porttitor nam. Pulvinar pharetra vehicula magna sagittis, tempus orci."
+        text={["Posuere tincidunt malesuada nulla nunc sed imperdiet ut nisi commodo. Elit et nec, viverra eu fusce sodales lobortis eu nunc. Urna proin eu consectetur est urna, pulvinar laoreet et pharetra. Arcu quam convallis porttitor nam. Pulvinar pharetra vehicula magna sagittis, tempus orci.",
+        "Posuere tincidunt malesuada nulla nunc sed imperdiet ut nisi commodo. Elit et nec, viverra eu fusce sodales lobortis eu nunc. Urna proin eu consectetur est urna, pulvinar laoreet et pharetra. Arcu quam convallis porttitor nam. Pulvinar pharetra vehicula magna sagittis, tempus orci."]}
         classes="right primary overlap-previous"
         auxImage="logo-masks.png"
       >

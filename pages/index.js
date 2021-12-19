@@ -28,7 +28,7 @@ export default function Home () {
       </Head> */}
       <CoverImage title="UM PALCO PARA QUEM NÃO TEM." image="palco2.jpeg"/>
 
-      <motion.div
+      {/* <motion.div
         ref={ref}
         animate={controls}
         initial="hidden"
@@ -37,17 +37,17 @@ export default function Home () {
           visible: { opacity: 1 },
           hidden: { opacity: 0 }
         }}
-      >
+      > */}
         <TripleImgMosaic />
-      </motion.div>
+      {/* </motion.div> */}
       <hr></hr>
       <TextBlock
-        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"
+        text={["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"]}
         classes="left black overlap-next"
       ></TextBlock>
       <img src="/frente-main.jpeg" className="full-width-img" />
       <TextBlock
-        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"
+        text={["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"]}
         classes="right primary overlap-previous"
       ></TextBlock>
       <hr></hr>

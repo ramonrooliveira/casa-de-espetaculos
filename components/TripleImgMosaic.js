@@ -8,7 +8,7 @@ const TripleImgMosaic = () => {
       </div>
       <div className="double">
         <div>
-          <img src="./pub-interior.jpeg" alt=""/>
+          <img src="./pub-cover.jpeg" alt=""/>
           <span className="link-title top-left"><a href="/pub">PUB691</a></span>
         </div>
         <div>

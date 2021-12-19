@@ -84,7 +84,7 @@ const ContactForm = () => {
         }
         {!isLoading && isSent &&
         <>
-          <span>Mensagem enviada :)</span>
+          <span style={{fontFamily: "Merienda"}}>Mensagem enviada :)</span>
           <button onClick={() => setIsSent(false)}>Enviar outra mensagem</button>
         </>
         }
@@ -93,10 +93,6 @@ const ContactForm = () => {
         }
       </form>
       {/* <TextBlock text="instagram" classes="black"/> */}
-      <div className={styles.socialLinks}>
-        <span>instagram</span>
-        <span>email</span>
-      </div>
     </div>
   )
 }
