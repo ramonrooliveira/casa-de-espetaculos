@@ -42,12 +42,13 @@ export default function Home () {
       {/* </motion.div> */}
       <hr></hr>
       <TextBlock
-        text={["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"]}
+        text={["Situada na cidade de Porto Alegre, foi projetada e desenvolvida preservando os traços e memórias da arquitetura inglesa em uma construção de mais de 100 anos totalmente renovada! O sobrado histórico é um espaço de Coworking para atividades culturais e que oferece locação de ambientes para projetos tanto no mundo das artes quanto no corporativo; para que ideias que floresçam possam ser realizadas!"]}
         classes="left black overlap-next"
       ></TextBlock>
       <img src="/frente-main.jpeg" className="full-width-img" />
       <TextBlock
-        text={["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"]}
+        text={["A Casa de Espetáculos é um espaço multicultural; possui o Teatro William Shakespeare com plateia para 88 espectadores, palco para apresentações, camarim, sala técnica de sonorização e iluminação e demais instalações como salas de apoio multifuncionais para aulas, workshops, oficinas, palestras, reuniões e tudo mais que sua criatividade permitir! Contamos ainda com o PUB691 que é um acolhedor espaço onde os frequentadores podem confraternizar, encontrar amigos, aguardar para assistirem shows e apreciarem uma excelente cerveja artesanal e hidromel de fabricação própria, além de petiscos, inspirados na Cultura da Europa Medieval.",
+      "Venha conhecer! Entre em contato para saber mais da agenda do teatro e dos demais espaços!"]}
         classes="right primary overlap-previous"
       ></TextBlock>
       <hr></hr>

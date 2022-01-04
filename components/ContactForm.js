@@ -84,12 +84,12 @@ const ContactForm = () => {
         }
         {!isLoading && isSent &&
         <>
-          <span style={{fontFamily: "Merienda"}}>Mensagem enviada :)</span>
+          <span style={{fontFamily: "Merienda"}}>Mensagem enviada!</span>
           <button onClick={() => setIsSent(false)}>Enviar outra mensagem</button>
         </>
         }
         {isLoading &&
-        <span>is loading</span>
+        <span>Enviando mensagem...</span>
         }
       </form>
       {/* <TextBlock text="instagram" classes="black"/> */}

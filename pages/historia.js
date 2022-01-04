@@ -8,8 +8,13 @@ export default function Historia () {
     <div>
       <CoverImage title="HISTÓRIA" image="frente-zoom.jpeg" />
       <TextBlock
-        text={["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"]}
+        text={["Inserida num sobrado histórico da década de 20, inspirada na cultura inglesa, é projeto do primeiro proprietário que construiu baseado numa casa que ele possuía em Londres. Todos nossos espaços homenageiam e são inspirados na arte e cultura das ilhas britânicas."]}
         classes="right black overlap-previous"
+      />
+      <TextBlock
+        text={["“Dar um palco para quem não tem”, com essa afirmação em 16 de setembro de 2018 iniciou a Casa de Espetáculos com a proposta inovadora adequada ao mundo contemporâneo de oferecer espaços para atividades culturais e corporativas no formato coworking!",
+        ""]}
+        classes="left primary"
       />
       <hr></hr>
 
@@ -17,7 +22,7 @@ export default function Historia () {
 
       <img src="/carla2.jpeg" className="full-width-img align-top"/>
       <TextBlock
-        text={["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos repellendus exercitationem sit repudiandae est reprehenderit maxime, dicta perspiciatis eius voluptatum, quibusdam aliquid deleniti eaque cum quod ratione porro impedit?"]}
+        text={["Foram anos de restaurações, em adequar o sobrado para atingir todas as condições que a legislação atual exige e qualificar os espaços para profissionais realizarem seus projetos! E quando conseguimos abrir e novamente reabrir, aconteceram muitos momentos maravilhosos para os artistas, professores, público, amigos e familiares preenchendo de alegria e magia todos os nossos espaços com dança, música, teatro e outras atividades."]}
         classes="right black overlap-previous"
       />
 
@@ -38,10 +43,11 @@ export default function Historia () {
       <img src="/palco4.jpeg" className="full-width-img"/>
 
       <TextBlock
-        text={["Posuere tincidunt malesuada nulla nunc sed imperdiet ut nisi commodo. Elit et nec, viverra eu fusce sodales lobortis eu nunc. Urna proin eu consectetur est urna, pulvinar laoreet et pharetra. Arcu quam convallis porttitor nam. Pulvinar pharetra vehicula magna sagittis, tempus orci.",
-        "Posuere tincidunt malesuada nulla nunc sed imperdiet ut nisi commodo. Elit et nec, viverra eu fusce sodales lobortis eu nunc. Urna proin eu consectetur est urna, pulvinar laoreet et pharetra. Arcu quam convallis porttitor nam. Pulvinar pharetra vehicula magna sagittis, tempus orci."]}
+        text={["Quando surgiu o propósito, ainda ninguém poderia imaginar o grande desafio da pandemia em 2020; mas conseguindo de alguma forma prever o futuro, hoje nossa importância é ainda maior, proporcionar um local para excelentes profissionais desenvolverem seus projetos e para as pessoas serem mais felizes!",
+        // "Posuere tincidunt malesuada nulla nunc sed imperdiet ut nisi commodo. Elit et nec, viverra eu fusce sodales lobortis eu nunc. Urna proin eu consectetur est urna, pulvinar laoreet et pharetra. Arcu quam convallis porttitor nam. Pulvinar pharetra vehicula magna sagittis, tempus orci."
+      ]}
         classes="right primary overlap-previous"
-        auxImage="logo-masks.png"
+        // auxImage="logo-masks.png"
       >
 
       </TextBlock>

@@ -23,16 +23,18 @@ const items = [
 export default function Galeria () {
   return (
     <div>
-      <CoverImage title="GALERIA" image="mosaico-galeria.jpeg" extra="dont-cut" />
+      <CoverImage title="GALERIA" image="mosaico-galeria.jpeg" 
+      extra="dont-cut" 
+      />
       <AliceCarousel 
-        autoPlay={true}
+        autoPlay={false}
         // autoPlayControls={true}
         autoPlayInterval={3500}
         animationDuration={1200}
         animationType="fadeout"
         autoPlayStrategy="all"
         infinite={true}
-        disableButtonsControls={true}
+        disableButtonsControls={false}
         mouseTracking 
         items={items} 
       />
